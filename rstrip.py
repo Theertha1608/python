@@ -1,0 +1,4 @@
+s='Learning python is fun!'
+print(s.rstrip())
+s='Learning python is fun!******'
+print(s.rstrip('*'))

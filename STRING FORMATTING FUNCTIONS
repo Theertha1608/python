@@ -1,0 +1,253 @@
+STRING  FORMATTING FUNCTIONS
+
+1.len(string)
+
+s='Learning python is fun!'
+print('Length of',s,'is',len(s))
+
+OUTPUT:
+Length of Leaning of python is fun is 24
+
+
+2.lower()
+
+s='Learning python is fun!'
+print(s.lower())
+
+OUTPUT:
+learning python is fun!
+
+3.upper()
+
+s='Learning python is fun!'
+print(s.upper())
+
+OUTPUT:
+LEARNING PYTHON IS FUN!
+
+4.swapcase()
+
+s='LEARNING PYTHON is fun!'
+print(s.swapcase())
+
+OUTPUT:
+learning python IS FUN!
+
+5.capitalize()
+
+s='Learning Python is fun!'
+print(s.capitalize())
+
+OUTPUT:
+Learning python is fun!
+
+6.title()
+
+s='Learning Python is fun!'
+print(s.title())
+
+OUTPUT:
+Learning Python Is Fun!
+
+7.lstrip()
+
+s='      Learning Python is fun!'
+print(s.lstrip())
+s='******Learning Python is fun!'
+print(s.lstrip())
+
+OUTPUT:
+Learning Python is fun!min()
+Learning Python is fun!
+
+8.rstrip()
+
+s='Learning python is fun!'
+print(s.rstrip())
+s='Learning python is fun!******'
+print(s.rstrip('*'))
+
+
+OUTPUT:
+Learning python is fun!
+Learning python is fun!
+
+9.strip()
+
+s='Learning python is fun!'
+print(s.rstrip())
+s='Learning python is fun!******'
+print(s.rstrip('*'))
+
+OUTPUT:
+Learning python is fun!
+Learning python is fun!
+
+
+10.max()
+
+s='Learning python is fun!'
+print('Maximum character is: ',max(s))
+
+OUTPUT:
+Maximum character is:  y
+
+11.min()
+
+s='Learning-python-is-fun!'
+print('Minimum character is: ',min(s))
+
+OUTPUT:
+Minimum character is:  -
+
+12.replace()
+
+s="This is very new.this is good"
+print(s.replace('is','was'))
+print(s.replace('is','was',2))
+
+OUTPUT:
+Thwas was very new.thwas was good
+Thwas was very new.this is good
+
+13.center()
+
+s="This is python programming"
+print(s.center(30,'*'))
+print(s.center(30))
+
+OUTPUT:
+**This is python programming**
+  This is python programming  
+
+14.ljust()
+
+s="This is python programming"
+print(s.ljust(30,'*'))
+print(s.ljust(30))
+
+OUTPUT:
+This is python programming****
+This is python programming    
+
+15.rjust()
+
+s="This is python programming"
+print(s.rjust(30,'*'))
+print(s.rjust(30))
+
+OUTPUT:
+****This is python programming
+    This is python programming
+
+16.zfill()
+
+s="This is python programming"
+print(s.zfill(30))
+ 
+OUTPUT:
+0000This is python programming
+
+17.count()
+
+s="This is python programming"
+print(s.count('i',0,10))
+print(s.count('i',0,25))
+
+OUTPUT:
+2
+3
+
+18.find()
+
+s="This is python programming"
+print(s.find('thon',0,25))
+print(s.find('thy'))
+
+OUTPUT:
+10
+-1
+
+19.rfind()
+
+s="This is python programming"
+print(s.rfind('thon',0,25))
+print(s.rfind('thy'))
+
+OUTPUT:
+10
+-1
+
+20.index()
+
+s="This is python programming"
+print(s.index('thon',0,25))
+print(s.index('thy'))
+
+OUTPUT:
+10
+Traceback (most recent call last):
+  File "/home/mca/index.py", line 3, in <module>
+    print(s.index('thy'))
+ValueError: substring not found
+
+21.rindex()
+
+s="This is python programming"
+print(s.rindex('thon',0,25))
+print(s.rindex('thy'))
+
+OUTPUT:
+10
+Traceback (most recent call last):
+  File "/home/mca/rindex.py", line 3, in <module>
+    print(s.rindex('thy'))
+ValueError: substring not found
+
+22.startswith()
+
+s="Python programming is fun"
+print(s.startswith('is',10,21))
+s="Python programming is fun"
+print(s.startswith('is',19,25))
+
+OUTPUT:
+False
+True
+
+23.endswith()
+
+s="Python programming is fun"
+print(s.endswith('is',10,21))
+s="Python programming is fun"
+print(s.endswith('is',0,25))
+
+
+OUTPUT:
+True
+False
+
+24.isdecimal()
+
+s=u"This is Python 1234"
+print(s.isdecimal())
+s=u"123456"
+print(s.isdecimal())
+
+OUTPUT:
+False
+True
+
+25.isalpha()
+
+s=u"This is Python 1234"
+print(s.isalpha())
+s=u"Python"
+print(s.isalpha())
+
+
+OUTPUT:
+False
+True
+
+
